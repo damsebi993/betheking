@@ -1,0 +1,112 @@
+@font-face {
+    font-family: futura;
+    src: url(fonts/futura.ttf);
+  }
+
+body {
+    margin:0;
+    background-color:grey;
+    font-family:"futura";
+}
+
+#container {
+    margin:auto;
+    background: #2A2A36;
+    background: linear-gradient(50deg, #2A2A36 0%, #000000 100%);
+    position:relative;
+    width:1080px;
+    height:1920px;
+}
+
+#canvas {
+    background: rgb(102,106,120);
+    background: linear-gradient(90deg, rgba(102,106,120,1) 0%, rgba(29,23,27,1) 100%);
+}
+
+.kingTag {
+    background-color: #D58335;
+    color:white;
+    font-size:40px;
+}
+
+#userText {
+    position:absolute;
+    top: 200px;
+    left:450px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    max-width: 500px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.descTag {
+    background-color: #55B539;
+    color:white;
+    font-size:120px;
+    transform: scale(1, .75);
+}
+
+#beText {
+    position:absolute;
+    top: 250px;
+    left:660px;
+}
+
+#theText {
+    position:absolute;
+    top: 350px;
+    left:660px;
+}
+
+#kingText {
+    position:absolute;
+    top: 450px;
+    left:660px;
+}
+
+#giftPanelContainer {
+    color:white;
+    float:right;
+    padding:50px;
+    font-size:50px;
+    text-align:right;
+}
+
+.giftPanelTitle {
+    font-size:80px;
+}
+
+.yellow {
+    color:#D7D749;
+}
+
+button {
+    font-size:40px;
+}
+
+#kingImage {
+    width:150px;
+    height:150px;
+    position:absolute;
+    top:350px;
+    left:200px;
+    border-radius:100%;
+    border:5px solid gold;
+    opacity:0;
+}
+
+#kingImageCrown {
+    position:absolute;
+    top:290px;
+    left:200px;
+    z-index:999;
+    width:150px;
+    opacity:0;
+}
+
+#space {
+    height:150px;
+    background: rgb(102,106,120);
+    background: linear-gradient(90deg, rgba(102,106,120,1) 0%, rgba(29,23,27,1) 100%);
+}

@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Be The King</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"  crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="connection.js"></script>
+        <script type="importmap">
+            {
+                "imports": {
+                    "three": "https://unpkg.com/three@0.138.0/build/three.module.js",
+                    "OrbitControls": "https://unpkg.com/three@0.138.0/examples/jsm/controls/OrbitControls.js",
+                    "GLTFLoader": "https://unpkg.com/three@0.138.0/examples/jsm/loaders/GLTFLoader.js",
+                    "FontLoader": "https://unpkg.com/three@0.138.0/examples/jsm/loaders/FontLoader.js",
+                    "TextGeometry": "https://unpkg.com/three@0.138.0/examples/jsm/geometries/TextGeometry.js"
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <script type="module">
+            import { spawnLike, spawnVIP, spawnFollow } from "./appv.js";
+            window.spawnLike = spawnLike;
+            window.spawnVIP = spawnVIP;
+            window.spawnFollow = spawnFollow;
+          </script>
+          <script>
+            function spawn()
+            {
+                usrName = "test"
+                usrImg = "https://p19-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/2ffd285d486e8787445d752191de8041~c5_100x100.webp?x-expires=1671343200&x-signature=tGp4WhTlakgGgBme9mCekdHQXQo%3D"
+            }
+            </script>
+        <button onclick = window.spawnLike() id="spawnVipButton">spawnVIP</button>
+        <button onclick = window.spawnFollow() id="spawnFollowButton">spawnFollow</button>
+        <button onclick = window.spawnVIP() id="spawnLikeButton">spawnLike</button>
+        <div id="container">
+            <div id="space"></div>
+            <img id="kingImageCrown" src="img/crown.png">
+            <img id="kingImage" src="img/1.png" />
+            <span class="kingTag" id="userText">username</span>
+            <span class="descTag" id="beText">Be</span>
+            <span class="descTag" id="theText">The</span>
+            <span class="descTag" id="kingText">King</span>
+            <div id="canvasContainer">
+            </div>
+            <div id="giftPanelContainer">
+                <span class="giftPanelTitle">Gift = <span class="yellow">VIPJoins</span></span>
+                <br/>
+                <span class="giftPanelText">Emoji = free Join<br/>100Likes = fast Join<br/>Share = Join<br/>Follow = 1<span class="yellow">VIP</span>Join</span>
+            </div>
+        </div>
+        <script type="module" src="appv.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!--<script src="/socket.io/socket.io.js"></script>-->
+        <script type="module" src="socketClient.js"></script>
+    </body>
+</html>
